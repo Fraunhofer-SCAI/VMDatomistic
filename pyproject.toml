@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "VMDatomistic"
+version = "2025.05"
+description = "A minimal package for providing pretrained machine learning force fields for material simulations with slim dependencies."
+authors = [
+    { name = "Rick Oerder", email = "rick.benedikt.oerder@scai.fraunhofer.de" },
+    { name = "Gerrit Schmieden", email = "gerrit.wilhelm.schmieden@scai.fraunhofer.de" },
+    { name = "Jan Hamaekers", email = "jan.hamaekers@scai.fraunhofer.de" },
+]
+maintainers = [
+    { name = "Rick Oerder", email = "rick.benedikt.oerder@scai.fraunhofer.de" },
+]
+dependencies = [
+    "torch>=2.1.0",
+    "ase",
+    "pymatgen"
+]
+
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+pyg = [
+    "torch_geometric",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
