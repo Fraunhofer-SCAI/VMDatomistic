@@ -1,1 +1,1 @@
-include src/VMDatomistic/checkpoints/M3GNet_PBE_r2SCAN_epoch_100.pt
+include src/VMDatomistic/models/checkpoints/M3GNet_PBE_r2SCAN_epoch_100.pt
