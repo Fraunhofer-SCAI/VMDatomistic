@@ -15,15 +15,15 @@ updated in the next weeks.
 
 The model can be installed with pip:
 
-```python
-pip install git+https://github.com/Fraunhofer-SCAI/VMDatomistic
+```bash
+pip install git+https://github.com/Fraunhofer-SCAI/VMDatomistic.git
 ```
 
 Dependencies are `torch>=2.1.0`, `ase`, `pymatgen` and optionally `torch_geometric` for batched inference. You can
 install `torch_geometric` automatically with:
 
-```python
-pip install git+https://github.com/Fraunhofer-SCAI/VMDatomistic[pyg]
+```bash
+pip install git+https://github.com/Fraunhofer-SCAI/VMDatomistic.git#egg=VMDatomistic[pyg]
 ```
 
 # Examples:
