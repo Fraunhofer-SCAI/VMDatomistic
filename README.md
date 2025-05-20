@@ -1,9 +1,9 @@
-# Multi-fidelity M3GNet for material simulations
+# Universal Multi-fidelity M3GNet for material simulations
 
 The goal of this repository is to showcase the `trainable data embedding` approach presented in our paper [1] for
 training atomistic machine learning models on multiple reference methods simultaneously.
 This repository contains a TorchScript model for evaluating an implementation of the M3GNet [2] model that was trained
-on two different fidelities found in the MatPES dataset [3] (PBE and r2SCAN). In addition, we provide an ASE calculator.
+on two different fidelity levels found in the MatPES dataset [3] (PBE and r2SCAN). In addition, we provide an ASE calculator.
 
 A scalable multi-GPU version of this model and other machine learning force fields will be available in our massively
 parallel
@@ -55,9 +55,9 @@ When using the model for your work, please cite our work with:
 
 ```
 @misc{OSH2025, 
-title={Trainable Data Embeddings Enable Multi-Fidelity Learning}, 
-DOI={10.26434/chemrxiv-2025-vx7nx}, 
-url={https://doi.org/10.26434/chemrxiv-2025-vx7nx}, 
+title={Multi-Fidelity Learning for Atomistic Models via Trainable Data Embeddings}, 
+DOI={10.26434/chemrxiv-2025-vx7nx-v2}, 
+url={https://doi.org/10.26434/chemrxiv-2025-vx7nx-v2}, 
 author={Oerder, Rick and Schmieden, Gerrit and Hamaekers, Jan}, 
 year={2025},
 note={ChemRxiv Preprint.}} 
@@ -67,8 +67,8 @@ Please cite [2] and [3], as well.
 
 # References
 
-[1] Oerder, R., Schmieden, G., & Hamaekers, J. (2025). Trainable Data Embeddings Enable Multi-Fidelity Learning.
-ChemRxiv Preprint. DOI: [10.26434/chemrxiv-2025-vx7nx](https://doi.org/10.26434/chemrxiv-2025-vx7nx).
+[1] Oerder, R., Schmieden, G., & Hamaekers, J. (2025). Multi-Fidelity Learning for Atomistic Models via Trainable Data Embeddings.
+ChemRxiv Preprint. DOI: [10.26434/chemrxiv-2025-vx7nx-v2](https://doi.org/10.26434/chemrxiv-2025-vx7nx-v2).
 
 [2] Chen, C., & Ong, S.P. (2023). A universal graph deep learning interatomic potential for the periodic table. Nature
 Computational Science, 2, 718–728. DOI: [10.1038/s43588-022-00349-3](https://doi.org/10.1038/s43588-022-00349-3).
